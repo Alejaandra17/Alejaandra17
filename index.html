@@ -3,248 +3,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Kevin Smith</title>
+    <title>Portfolio - Maya Nares</title>
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            line-height: 1.6;
             color: #333;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+        }
+
+        header h1 span {
+            color: #0073ff;
+        }
+
+        header nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        header nav a:hover {
+            color: #0073ff;
         }
 
         .hero {
-            background: #f5e8d7;
-            text-align: center;
-            padding: 50px 20px;
-        }
-
-        .hero h1 {
-            font-size: 2.5rem;
-            color: #333;
-        }
-
-        .hero h1 span {
-            color: #d6a965;
-        }
-
-        .hero .subtitle {
-            font-size: 1.2rem;
-            margin: 10px 0 30px;
-        }
-
-        .stats {
             display: flex;
-            justify-content: center;
-            gap: 20px;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px;
+            background-color: #f5ebe0;
         }
 
-        .stats div {
-            text-align: center;
-        }
-
-        .stats h2 {
-            font-size: 2rem;
-            color: #d6a965;
-        }
-
-        section {
-            padding: 50px 20px;
-        }
-
-        .services, .about, .testimonials, .portfolio, .contact {
-            background: #f5f5f5;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        h2 {
-            text-align: center;
-            margin-bottom: 30px;
-            color: #333;
-        }
-
-        .service-cards, .features, .testimonial-cards, .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-        }
-
-        .card, .feature, .testimonial {
-            background: #fff;
+        .hero .profile-card {
+            background-color: #fff;
             padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             text-align: center;
-            flex: 1 1 calc(33% - 40px);
-            max-width: calc(33% - 40px);
+            width: 250px;
         }
 
-        .testimonial {
-            flex: 1 1 calc(30% - 40px);
+        .hero .profile-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 15px;
         }
 
-        .gallery img {
-            width: 100%;
-            height: auto;
-            border-radius: 5px;
+        .hero .profile-card h2 {
+            font-size: 1.2rem;
+            margin: 10px 0;
         }
 
-        form {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            max-width: 500px;
-            margin: 0 auto;
+        .hero .profile-card p {
+            font-size: 0.9rem;
+            color: #666;
+            margin: 5px 0;
         }
 
-        input, textarea, button {
-            padding: 10px;
+        .hero .profile-card .social-icons a {
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .hero .profile-card .social-icons a:hover {
+            color: #0073ff;
+        }
+
+        .hero .info {
+            max-width: 600px;
+        }
+
+        .hero .info h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero .info p {
             font-size: 1rem;
-            border: 1px solid #ccc;
-            border-radius: 5px;
+            margin-bottom: 20px;
+            color: #666;
         }
 
-        button {
-            background: #d6a965;
-            color: #fff;
+        .hero .info button {
+            padding: 10px 20px;
             border: none;
+            border-radius: 5px;
+            background-color: #0073ff;
+            color: #fff;
+            font-size: 1rem;
             cursor: pointer;
-            transition: background 0.3s;
+            margin-right: 10px;
         }
 
-        button:hover {
-            background: #b5894c;
+        .hero .info button:hover {
+            background-color: #005bb5;
         }
 
         footer {
-            text-align: center;
             padding: 20px;
-            background: #333;
+            background-color: #333;
             color: #fff;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #0073ff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <header class="hero">
-        <div class="container">
-            <h1>Hola, yo soy <span>Kevin Smith</span></h1>
-            <p class="subtitle">Diseñador gráfico y desarrollador web</p>
-            <div class="stats">
-                <div>
-                    <h2>100+</h2>
-                    <p>Proyectos completados</p>
-                </div>
-                <div>
-                    <h2>12</h2>
-                    <p>Años de experiencia</p>
-                </div>
-            </div>
-        </div>
+    <header>
+        <h1><span>Maya Nares</span> / GESTOR DE PROYECTO</h1>
+        <nav>
+            <a href="#">SOBRE MÍ</a>
+            <a href="#">CURRÍCULUM</a>
+            <a href="#">PROYECTOS</a>
+            <a href="#">CONTACTO</a>
+        </nav>
     </header>
 
-    <section class="services">
-        <div class="container">
-            <h2>¿Qué ofrezco?</h2>
-            <div class="service-cards">
-                <div class="card">
-                    <h3>Atención</h3>
-                    <p>Siempre enfocado en los detalles y en la calidad.</p>
-                </div>
-                <div class="card">
-                    <h3>Puntualidad</h3>
-                    <p>Entregas rápidas y dentro del plazo establecido.</p>
-                </div>
-                <div class="card">
-                    <h3>Auténtico</h3>
-                    <p>Diseños únicos adaptados a tus necesidades.</p>
-                </div>
+    <section class="hero">
+        <div class="profile-card">
+            <img src="profile.jpg" alt="Maya Nares">
+            <h2>Maya Nares</h2>
+            <p>GESTOR DE PROYECTO</p>
+            <div class="social-icons">
+                <a href="#">&#x25CF;</a>
+                <a href="#">&#x25CF;</a>
+                <a href="#">&#x25CF;</a>
+                <a href="#">&#x25CF;</a>
             </div>
         </div>
-    </section>
 
-    <section class="about">
-        <div class="container">
-            <h2>¿Quién soy?</h2>
-            <div class="features">
-                <div class="feature">
-                    <h3>Diseñador</h3>
-                    <p>Creación de identidades visuales memorables.</p>
-                </div>
-                <div class="feature">
-                    <h3>Desarrollador</h3>
-                    <p>Desarrollo de sitios web modernos y funcionales.</p>
-                </div>
-                <div class="feature">
-                    <h3>Soporte</h3>
-                    <p>Asistencia personalizada para tu proyecto.</p>
-                </div>
-                <div class="feature">
-                    <h3>Inspiro</h3>
-                    <p>Innovación en cada detalle del diseño.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="projects">
-        <div class="container">
-            <h2>Estoy feliz de saber que más de 300 proyectos se realizaron con éxito</h2>
-            <button>Ver más</button>
-        </div>
-    </section>
-
-    <section class="testimonials">
-        <div class="container">
-            <h2>Lo que dicen los clientes</h2>
-            <div class="testimonial-cards">
-                <div class="testimonial">
-                    <p>"Un excelente profesional. Recomiendo su trabajo al 100%."</p>
-                    <p><strong>- Cliente 1</strong></p>
-                </div>
-                <div class="testimonial">
-                    <p>"Su creatividad y rapidez superaron mis expectativas."</p>
-                    <p><strong>- Cliente 2</strong></p>
-                </div>
-                <div class="testimonial">
-                    <p>"Gracias a Kevin, mi negocio tiene un branding único."</p>
-                    <p><strong>- Cliente 3</strong></p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="portfolio">
-        <div class="container">
-            <h2>Mis trabajos</h2>
-            <div class="gallery">
-                <img src="work1.jpg" alt="Trabajo 1">
-                <img src="work2.jpg" alt="Trabajo 2">
-                <img src="work3.jpg" alt="Trabajo 3">
-                <img src="work4.jpg" alt="Trabajo 4">
-                <img src="work5.jpg" alt="Trabajo 5">
-                <img src="work6.jpg" alt="Trabajo 6">
-            </div>
-        </div>
-    </section>
-
-    <section class="contact">
-        <div class="container">
-            <h2>¿Tienes algún proyecto? Hablemos</h2>
-            <form>
-                <input type="text" placeholder="Nombre" required>
-                <input type="email" placeholder="Email" required>
-                <textarea placeholder="Mensaje" required></textarea>
-                <button type="submit">Enviar</button>
-            </form>
+        <div class="info">
+            <h1>Hola</h1>
+            <p>Esto es lo que soy y lo que hago.</p>
+            <p>Párrafo. Haz clic aquí para agregar tu propio texto y editar. Es fácil. Aquí puedes contar tu historia y permitir que tus usuarios sepan más sobre ti.</p>
+            <button>CURRÍCULUM</button>
+            <button>PROYECTOS</button>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2025 Kevin Smith. Todos los derechos reservados.</p>
+        <p>&copy; 2035 Creado por Maya Nares con <a href="https://www.wix.com">Wix.com</a></p>
     </footer>
 </body>
 </html>
