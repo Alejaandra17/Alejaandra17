@@ -3,113 +3,248 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web</title>
+    <title>Portfolio - Kevin Smith</title>
     <style>
-        /* Estilos generales */
         body {
+            margin: 0;
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-        }
-
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        /* Estilos para el encabezado */
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2em;
-            text-align: center;
-        }
-
-        header nav ul {
-            list-style-type: none;
-            padding: 0;
-            text-align: center;
-        }
-
-        header nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-
-        header nav ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
-
-        header nav ul li a:hover {
-            text-decoration: underline;
-        }
-
-        /* Estilos para el pie de página */
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-        }
-
-        /* Estilos para las secciones */
-        section {
-            margin-bottom: 20px;
-        }
-
-        section h2 {
+            line-height: 1.6;
             color: #333;
         }
 
-        section p {
-            color: #666;
+        .hero {
+            background: #f5e8d7;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            color: #333;
+        }
+
+        .hero h1 span {
+            color: #d6a965;
+        }
+
+        .hero .subtitle {
+            font-size: 1.2rem;
+            margin: 10px 0 30px;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .stats div {
+            text-align: center;
+        }
+
+        .stats h2 {
+            font-size: 2rem;
+            color: #d6a965;
+        }
+
+        section {
+            padding: 50px 20px;
+        }
+
+        .services, .about, .testimonials, .portfolio, .contact {
+            background: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .service-cards, .features, .testimonial-cards, .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .card, .feature, .testimonial {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            flex: 1 1 calc(33% - 40px);
+            max-width: calc(33% - 40px);
+        }
+
+        .testimonial {
+            flex: 1 1 calc(30% - 40px);
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        input, textarea, button {
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background: #d6a965;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #b5894c;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: #fff;
         }
     </style>
 </head>
 <body>
-    <header>
+    <header class="hero">
         <div class="container">
-            <h1>Mi Página Web</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Acerca de</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </nav>
+            <h1>Hola, yo soy <span>Kevin Smith</span></h1>
+            <p class="subtitle">Diseñador gráfico y desarrollador web</p>
+            <div class="stats">
+                <div>
+                    <h2>100+</h2>
+                    <p>Proyectos completados</p>
+                </div>
+                <div>
+                    <h2>12</h2>
+                    <p>Años de experiencia</p>
+                </div>
+            </div>
         </div>
     </header>
-    
-    <main>
+
+    <section class="services">
         <div class="container">
-            <section>
-                <h2>Bienvenido a mi página web</h2>
-                <p>Esta es una página web de ejemplo creada con HTML y CSS.</p>
-            </section>
-            
-            <section>
-                <h2>Sobre mí</h2>
-                <p>¡Hola! Soy [Tu Nombre]. Me encanta aprender sobre desarrollo web y crear proyectos interesantes.</p>
-            </section>
+            <h2>¿Qué ofrezco?</h2>
+            <div class="service-cards">
+                <div class="card">
+                    <h3>Atención</h3>
+                    <p>Siempre enfocado en los detalles y en la calidad.</p>
+                </div>
+                <div class="card">
+                    <h3>Puntualidad</h3>
+                    <p>Entregas rápidas y dentro del plazo establecido.</p>
+                </div>
+                <div class="card">
+                    <h3>Auténtico</h3>
+                    <p>Diseños únicos adaptados a tus necesidades.</p>
+                </div>
+            </div>
         </div>
-    </main>
-    
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <h2>¿Quién soy?</h2>
+            <div class="features">
+                <div class="feature">
+                    <h3>Diseñador</h3>
+                    <p>Creación de identidades visuales memorables.</p>
+                </div>
+                <div class="feature">
+                    <h3>Desarrollador</h3>
+                    <p>Desarrollo de sitios web modernos y funcionales.</p>
+                </div>
+                <div class="feature">
+                    <h3>Soporte</h3>
+                    <p>Asistencia personalizada para tu proyecto.</p>
+                </div>
+                <div class="feature">
+                    <h3>Inspiro</h3>
+                    <p>Innovación en cada detalle del diseño.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects">
+        <div class="container">
+            <h2>Estoy feliz de saber que más de 300 proyectos se realizaron con éxito</h2>
+            <button>Ver más</button>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2>Lo que dicen los clientes</h2>
+            <div class="testimonial-cards">
+                <div class="testimonial">
+                    <p>"Un excelente profesional. Recomiendo su trabajo al 100%."</p>
+                    <p><strong>- Cliente 1</strong></p>
+                </div>
+                <div class="testimonial">
+                    <p>"Su creatividad y rapidez superaron mis expectativas."</p>
+                    <p><strong>- Cliente 2</strong></p>
+                </div>
+                <div class="testimonial">
+                    <p>"Gracias a Kevin, mi negocio tiene un branding único."</p>
+                    <p><strong>- Cliente 3</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio">
+        <div class="container">
+            <h2>Mis trabajos</h2>
+            <div class="gallery">
+                <img src="work1.jpg" alt="Trabajo 1">
+                <img src="work2.jpg" alt="Trabajo 2">
+                <img src="work3.jpg" alt="Trabajo 3">
+                <img src="work4.jpg" alt="Trabajo 4">
+                <img src="work5.jpg" alt="Trabajo 5">
+                <img src="work6.jpg" alt="Trabajo 6">
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <h2>¿Tienes algún proyecto? Hablemos</h2>
+            <form>
+                <input type="text" placeholder="Nombre" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
     <footer>
-        <div class="container">
-            <p>&copy; 2025 Mi Página Web</p>
-        </div>
+        <p>&copy; 2025 Kevin Smith. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
-
