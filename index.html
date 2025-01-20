@@ -1,153 +1,94 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Maya Nares</title>
+    <title>Mi Página Personal</title>
     <style>
+        /* Estilos generales */
         body {
+            font-family: 'Arial', sans-serif;
             margin: 0;
-            font-family: Arial, sans-serif;
+            padding: 0;
+            box-sizing: border-box;
             color: #333;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
+        /* Contenedor principal */
+        .container {
+            max-width: 900px;
+            width: 100%;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        /* Header */
         header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 50px;
-            background-color: #fff;
-            border-bottom: 1px solid #ddd;
+            background: #2575fc;
+            color: white;
+            text-align: center;
+            padding: 30px;
         }
 
         header h1 {
-            font-size: 1.5rem;
-        }
-
-        header h1 span {
-            color: #0073ff;
-        }
-
-        header nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #333;
+            margin: 0;
+            font-size: 2.5rem;
             font-weight: bold;
-            font-size: 0.9rem;
-            position: relative;
         }
 
-        header nav a:hover {
-            color: #0073ff;
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
         }
 
-        header nav a::after {
-            content: '';
-            display: block;
-            width: 0;
-            height: 2px;
-            background: #0073ff;
-            transition: width 0.3s;
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-        }
-
-        header nav a:hover::after {
-            width: 100%;
-        }
-
-        .hero {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 50px;
-            background-color: #f5ebe0;
-        }
-
-        .hero .profile-card {
-            background-color: #fff;
+        /* Secciones */
+        section {
             padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            width: 250px;
         }
 
-        .hero .profile-card img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
+        section h2 {
+            color: #2575fc;
             margin-bottom: 15px;
         }
 
-        .hero .profile-card h2 {
-            font-size: 1.2rem;
-            margin: 10px 0;
+        section p {
+            line-height: 1.6;
         }
 
-        .hero .profile-card p {
-            font-size: 0.9rem;
-            color: #666;
-            margin: 5px 0;
-        }
-
-        .hero .profile-card .social-icons a {
-            margin: 0 10px;
-            text-decoration: none;
-            font-size: 1.2rem;
-            color: #333;
-        }
-
-        .hero .profile-card .social-icons a:hover {
-            color: #0073ff;
-        }
-
-        .hero .info {
-            max-width: 600px;
-        }
-
-        .hero .info h1 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-
-        .hero .info p {
-            font-size: 1rem;
-            margin-bottom: 20px;
-            color: #666;
-        }
-
-        .hero .info button {
+        /* Botón */
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
             padding: 10px 20px;
-            border: none;
+            background: #6a11cb;
+            color: white;
+            text-decoration: none;
             border-radius: 5px;
-            background-color: #0073ff;
-            color: #fff;
-            font-size: 1rem;
-            cursor: pointer;
-            margin-right: 10px;
+            transition: background 0.3s;
         }
 
-        .hero .info button:hover {
-            background-color: #005bb5;
+        .btn:hover {
+            background: #2575fc;
         }
 
+        /* Footer */
         footer {
-            padding: 20px;
-            background-color: #333;
-            color: #fff;
             text-align: center;
-        }
-
-        footer p {
-            margin: 5px 0;
+            background: #f4f4f4;
+            padding: 10px;
             font-size: 0.9rem;
         }
 
         footer a {
-            color: #0073ff;
             text-decoration: none;
+            color: #2575fc;
         }
 
         footer a:hover {
@@ -156,40 +97,30 @@
     </style>
 </head>
 <body>
-    <header>
-        <h1><span>Maya Nares</span> / GESTOR DE PROYECTO</h1>
-        <nav>
-            <a href="#sobre-mi">SOBRE MÍ</a>
-            <a href="#curriculum">CURRÍCULUM</a>
-            <a href="#proyectos">PROYECTOS</a>
-            <a href="#contacto">CONTACTO</a>
-        </nav>
-    </header>
+    <div class="container">
+        <header>
+            <h1>¡Hola, soy [Tu Nombre]!</h1>
+            <p>Bienvenido a mi página personal</p>
+        </header>
 
-    <section id="sobre-mi" class="hero">
-        <div class="profile-card">
-            <img src="profile.jpg" alt="Maya Nares">
-            <h2>Maya Nares</h2>
-            <p>GESTOR DE PROYECTO</p>
-            <div class="social-icons">
-                <a href="#">&#x25CF;</a>
-                <a href="#">&#x25CF;</a>
-                <a href="#">&#x25CF;</a>
-                <a href="#">&#x25CF;</a>
-            </div>
-        </div>
+        <section>
+            <h2>Sobre mí</h2>
+            <p>Soy [Tu Profesión] apasionado por [Tu Interés]. Me encanta explorar nuevas ideas, aprender cosas nuevas y compartir mis conocimientos con el mundo.</p>
+        </section>
 
-        <div class="info">
-            <h1>Hola</h1>
-            <p>Esto es lo que soy y lo que hago.</p>
-            <p>Párrafo. Haz clic aquí para agregar tu propio texto y editar. Es fácil. Aquí puedes contar tu historia y permitir que tus usuarios sepan más sobre ti.</p>
-            <button>CURRÍCULUM</button>
-            <button>PROYECTOS</button>
-        </div>
-    </section>
+        <section>
+            <h2>Proyectos</h2>
+            <p>Aquí tienes algunos de mis proyectos recientes:</p>
+            <ul>
+                <li>Proyecto 1 - <a href="#" class="btn">Ver más</a></li>
+                <li>Proyecto 2 - <a href="#" class="btn">Ver más</a></li>
+                <li>Proyecto 3 - <a href="#" class="btn">Ver más</a></li>
+            </ul>
+        </section>
 
-    <footer>
-        <p>&copy; 2035 Creado por Maya Nares con <a href="https://www.wix.com">Wix.com</a></p>
-    </footer>
+        <footer>
+            <p>© 2025 [Tu Nombre] - <a href="mailto:tuemail@example.com">Contáctame</a></p>
+        </footer>
+    </div>
 </body>
 </html>
