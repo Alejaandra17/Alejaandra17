@@ -6,7 +6,7 @@
     <title>My Personal Website</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
-        /* General Reset */
+    
         * {
             margin: 0;
             padding: 0;
@@ -26,7 +26,7 @@
             margin: 0 auto;
         }
 
-        /* Navbar */
+      
         .navbar {
             display: flex;
             justify-content: space-between;
@@ -137,7 +137,6 @@
             color: #7f8c8d;
         }
 
-        /* About Section */
         .about-content {
             display: flex;
             gap: 2rem;
@@ -155,7 +154,7 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
-        /* Projects Section */
+ 
         .project-gallery {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -184,7 +183,7 @@
             padding: 1rem;
         }
 
-        /* Contact Section */
+ 
         .contact-form {
             max-width: 600px;
             margin: 0 auto;
@@ -207,7 +206,7 @@
             height: 150px;
         }
 
-        /* Footer */
+    
         .footer {
             background: #2c3e50;
             color: #ecf0f1;
@@ -258,6 +257,14 @@
 </head>
 <body>
     <header class="hero">
+        <div class="hero-content container">
+            <h1>Hi! I´m Alejandra Fernández</h1>
+            <p>Discover my journey, projects, and passion for technology and design.</p>
+            <a href="#about" class="btn">Learn More</a>
+        </div>
+    </header>
+
+    <main>
         <nav class="navbar">
             <div class="container">
                 <a href="#" class="logo">MyWebsite</a>
@@ -269,14 +276,6 @@
                 <div class="toggle-menu">☰</div>
             </div>
         </nav>
-        <div class="hero-content container">
-            <h1>Welcome to My World</h1>
-            <p>Discover my journey, projects, and passion for technology and design.</p>
-            <a href="#about" class="btn">Learn More</a>
-        </div>
-    </header>
-
-    <main>
         <section id="about" class="about container">
             <div class="section-header">
                 <h2>About Me</h2>
@@ -284,7 +283,7 @@
             </div>
             <div class="about-content">
                 <div class="about-text">
-                    <p>Hello! I'm a passionate web developer and designer with a love for creating stunning, functional websites. I specialize in HTML, CSS, JavaScript, and modern frameworks to bring ideas to life.</p>
+                    <p>Hello! I'm Alejandra, an passionate web developer and designer with a love for creating stunning, functional websites. I specialize in HTML, CSS, JavaScript, and modern frameworks to bring ideas to life.</p>
                     <p>When I'm not coding, you can find me exploring new places, reading tech blogs, or experimenting with photography.</p>
                 </div>
                 <img src="profile.jpg" alt="My Photo" class="about-photo">
@@ -301,43 +300,21 @@
                     <img src="project1.jpg" alt="Project 1">
                     <div class="project-info">
                         <h3>Project One</h3>
-                        <p>A description of the first project, highlighting its features and technology used.</p>
                     </div>
                 </div>
                 <div class="project-item">
                     <img src="project2.jpg" alt="Project 2">
                     <div class="project-info">
                         <h3>Project Two</h3>
-                        <p>A description of the second project, highlighting its features and technology used.</p>
                     </div>
                 </div>
                 <div class="project-item">
                     <img src="project3.jpg" alt="Project 3">
                     <div class="project-info">
                         <h3>Project Three</h3>
-                        <p>A description of the third project, highlighting its features and technology used.</p>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <section id="contact" class="contact container">
-            <div class="section-header">
-                <h2>Contact Me</h2>
-                <p>I'd love to hear from you!</p>
-            </div>
-            <form action="#" method="post" class="contact-form">
-                <div class="form-group">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" name="email" placeholder="Your Email" required>
-                </div>
-                <div class="form-group">
-                    <textarea name="message" placeholder="Your Message" required></textarea>
-                </div>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
         </section>
     </main>
 
@@ -347,7 +324,7 @@
             <ul class="social-links">
                 <li><a href="#">LinkedIn</a></li>
                 <li><a href="#">GitHub</a></li>
-                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
             </ul>
         </div>
     </footer>
